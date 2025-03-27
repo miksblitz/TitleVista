@@ -1,0 +1,220 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/rew8dbcdmerh"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#FFFFFF"
+        android:elevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- Status Bar (Time + Icon) -->
+            <LinearLayout
+                android:id="@+id/r1u044mppq4s"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="8dp"
+                android:orientation="horizontal"/>
+
+            <!-- App Logo -->
+
+            <!-- Navigation Tabs -->
+
+            <ImageView
+                android:id="@+id/rafrval67lea"
+                android:layout_width="148dp"
+                android:layout_height="54dp"
+                android:layout_marginStart="19dp"
+                android:layout_marginBottom="13dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/titlevistalogo" />
+
+            <LinearLayout
+                android:id="@+id/rwgqyt1hl5dc"
+                android:layout_width="411dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="19dp"
+                android:layout_marginBottom="6dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/rzpyounny2k"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="27dp"
+                    android:text="Title Checker"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/rzpyounny2k2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="27dp"
+                    android:text="Creativity Assistant"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/rzpyounny2k23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="27dp"
+                    android:text="Balance Optimizer"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+
+                <!-- Other tabs omitted for brevity -->
+            </LinearLayout>
+
+            <!-- Divider Line -->
+            <LinearLayout
+                android:id="@+id/ru0jyp9oda3e"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#B5B5B5"
+                android:orientation="vertical"/>
+
+            <!-- Purple Indicator Line -->
+            <LinearLayout
+                android:id="@+id/rx5frel2zmdr"
+                android:layout_width="105dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="117dp"
+                android:layout_marginBottom="25dp"
+                android:background="#A13EF8"
+                android:orientation="vertical" />
+
+            <!-- Main Content Card -->
+            <LinearLayout
+                android:id="@+id/rbksm8n0jav"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginBottom="35dp"
+                android:background="@drawable/titlechecksquare"
+                android:orientation="vertical"
+                android:paddingTop="21dp"
+                android:paddingBottom="227dp">
+
+                <!-- Tool Title -->
+                <TextView
+                    android:id="@+id/r1wj3lbicmme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginBottom="6dp"
+                    android:text="Title Checker Tool"
+                    android:textColor="#441D83"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <!-- Description -->
+                <TextView
+                    android:id="@+id/rmtshfm0exu"
+                    android:layout_width="298dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginBottom="2dp"
+                    android:text="Enter your title below to get instant feedback on its relevance and uniqueness."
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
+
+                <!-- Title Input Field -->
+                <EditText
+                    android:id="@+id/etTitleInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/rounded_white_bg"
+                    android:hint="OJT Timesheet Monitoring System"
+                    android:inputType="text"
+                    android:paddingHorizontal="14dp"
+                    android:paddingVertical="10dp"
+                    android:textColor="#000000"
+                    android:textSize="12sp" />
+
+                <!-- Check Title Button -->
+                <LinearLayout
+                    android:id="@+id/rurrt90a1d3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="72dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/orangeroundedbutton"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="67dp"
+                    android:paddingVertical="10dp">
+
+                    <TextView
+                        android:id="@+id/btnCheckTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Check Title"
+                        android:textColor="#441D83"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <!-- Feedback Section -->
+                <LinearLayout
+                    android:id="@+id/feedbackSection"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <!-- Uniqueness Metric -->
+                    <TextView
+                        android:id="@+id/tvUniqueness"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:text="Unique: 85% unique"
+                        android:textColor="#441D83"
+                        android:textSize="14sp" />
+
+                    <!-- Relevance Metric -->
+                    <TextView
+                        android:id="@+id/tvRelevance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:text="Relevance: High relevance to current research"
+                        android:textColor="#441D83"
+                        android:textSize="14sp" />
+
+                    <!-- Academic Alignment Metric -->
+                    <TextView
+                        android:id="@+id/tvAcademicAlignment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Academic Alignment: Strong Alignment with academic standards"
+                        android:textColor="#441D83"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
