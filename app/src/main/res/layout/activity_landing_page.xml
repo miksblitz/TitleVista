@@ -68,18 +68,28 @@
                 android:gravity="center_horizontal"
                 android:layout_marginBottom="13dp"
                 android:orientation="vertical">
-                <Button
-                    android:id="@+id/rre9jepp1zu"
+                <LinearLayout
+                    android:id="@+id/getStartedButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/pinkroundedbutton"
                     android:paddingVertical="15dp"
                     android:paddingHorizontal="94dp"
-                    android:text="GET STARTED"
-                    android:textColor="#D9D9D9"
-                    android:textSize="15sp"
-                    android:textStyle="bold" />
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/rq6bqun2l1en"
+                        android:textColor="#D9D9D9"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="GET STARTED"
+                        />
+                </LinearLayout>
             </LinearLayout>
+
             <LinearLayout
                 android:id="@+id/r34mqdqgutv8"
                 android:layout_width="match_parent"
@@ -87,17 +97,26 @@
                 android:gravity="center_horizontal"
                 android:layout_marginBottom="13dp"
                 android:orientation="vertical">
-                <Button
-                    android:id="@+id/ront2i2gzdgo"
+                <LinearLayout
+                    android:id="@+id/learnMoreButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/pinktransparentroundedbutton"
                     android:paddingVertical="15dp"
                     android:paddingHorizontal="94dp"
-                    android:text="LEARN MORE"
-                    android:textColor="#441D83"
-                    android:textSize="15sp"
-                    android:textStyle="bold" />
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/rj6b1d35i8v"
+                        android:textColor="#441D83"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="LEARN MORE"
+                        />
+                </LinearLayout>
             </LinearLayout>
             <RelativeLayout
                 android:id="@+id/rj0f85yob3ug_rl"
