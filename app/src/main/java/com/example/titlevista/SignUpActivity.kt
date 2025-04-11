@@ -7,8 +7,7 @@ import android.widget.EditText
 import android.widget.ImageView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import java.io.BufferedReader
-import java.io.InputStreamReader
+
 
 
 class SignUpActivity : AppCompatActivity() {
@@ -34,8 +33,7 @@ class SignUpActivity : AppCompatActivity() {
         showPassword.setOnClickListener { togglePasswordVisibility() }
         showConfirmPassword.setOnClickListener { toggleConfirmPasswordVisibility() }
 
-        // test reading the file
-        readUserDataFromRawFile()
+
     }
 
     private fun togglePasswordVisibility() {
@@ -66,29 +64,6 @@ class SignUpActivity : AppCompatActivity() {
         isConfirmPasswordVisible = !isConfirmPasswordVisible
         // Move cursor to end
         confirmPasswordEditText.setSelection(confirmPasswordEditText.text.length)
-    }
-
-    private fun readUserDataFromRawFile() {
-        try {
-            val inputStream = resources.openRawResource(R.raw.user_data)
-            val reader = BufferedReader(InputStreamReader(inputStream))
-            val stringBuilder = StringBuilder()
-            var line: String?
-
-            while (reader.readLine().also { line = it } != null) {
-                stringBuilder.append(line).append("\n")
-            }
-
-            reader.close()
-            inputStream.close()
-
-            // Output the file content (for example, log it or use it in your app)
-            val fileContent = stringBuilder.toString()
-            println(fileContent) // Replace with your desired logic
-        } catch (e: Exception) {
-            e.printStackTrace()
-            Toast.makeText(this, "Error reading user data", Toast.LENGTH_SHORT).show()
-        }
     }
 
     private fun validateAndSignUp() {

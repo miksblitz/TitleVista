@@ -3,13 +3,13 @@ package com.example.titlevista  // Make sure this matches your package name
 import android.os.Bundle
 import android.view.MenuItem
 import android.widget.ImageButton
-import androidx.appcompat.app.AppCompatActivity  // Changed from Activity to AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import com.google.android.material.navigation.NavigationView
 import androidx.appcompat.app.ActionBarDrawerToggle
 
-class DashboardActivity : AppCompatActivity() {  // Changed from Activity to AppCompatActivity
+class DashboardActivity : AppCompatActivity() {
 
     private lateinit var drawerLayout: DrawerLayout
     private lateinit var toggle: ActionBarDrawerToggle
@@ -32,6 +32,7 @@ class DashboardActivity : AppCompatActivity() {  // Changed from Activity to App
         )
         drawerLayout.addDrawerListener(toggle)
         toggle.syncState()
+
 
         // Enable the home button (hamburger icon) in the action bar
         supportActionBar?.setDisplayHomeAsUpEnabled(true)

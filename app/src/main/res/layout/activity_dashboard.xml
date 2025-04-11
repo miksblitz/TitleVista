@@ -70,61 +70,13 @@
 
                 </LinearLayout>
 
-                <!-- Navigation Tabs -->
-                <LinearLayout
-                    android:id="@+id/navigation_tabs"
-                    android:layout_width="match_parent"
-                    android:layout_height="32dp"
-                    android:layout_marginStart="19dp"
-                    android:layout_marginBottom="6dp"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:id="@+id/title_checker_tab"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginEnd="27dp"
-                        android:text="Title Checker"
-                        android:textColor="#000000"
-                        android:textSize="12sp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:id="@+id/creativity_assistant_tab"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginEnd="27dp"
-                        android:text="Creativity Assistant"
-                        android:textColor="#000000"
-                        android:textSize="12sp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:id="@+id/balance_optimizer_tab"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginEnd="27dp"
-                        android:text="Balance Optimizer"
-                        android:textColor="#000000"
-                        android:textSize="12sp"
-                        android:textStyle="bold" />
-                </LinearLayout>
-
                 <!-- Divider Line -->
                 <View
                     android:id="@+id/divider"
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
+                    android:layout_marginBottom="20dp"
                     android:background="#B5B5B5"/>
-
-                <!-- Purple Indicator Line -->
-                <View
-                    android:id="@+id/indicator_line"
-                    android:layout_width="105dp"
-                    android:layout_height="2dp"
-                    android:layout_marginStart="117dp"
-                    android:layout_marginBottom="25dp"
-                    android:background="#A13EF8" />
 
                 <!-- Main Content Card -->
                 <LinearLayout
@@ -172,7 +124,7 @@
                         android:layout_marginEnd="20dp"
                         android:layout_marginBottom="16dp"
                         android:background="@drawable/rounded_white_bg"
-                        android:hint="OJT Timesheet Monitoring System"
+                        android:hint="What's on your mind?"
                         android:inputType="text"
                         android:paddingHorizontal="14dp"
                         android:paddingVertical="10dp"
