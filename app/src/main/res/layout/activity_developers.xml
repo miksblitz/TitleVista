@@ -1,7 +1,5 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="#FFFFFF"
     android:orientation="vertical"
     android:layout_width="match_parent"
@@ -80,7 +78,7 @@
                         android:textSize="12sp"
                         android:layout_height="wrap_content"
                         android:layout_width="wrap_content"
-                        android:text="Developer" />
+                        android:text="Backend Developer" />
                 </LinearLayout>
             </LinearLayout>
 
@@ -115,7 +113,7 @@
                         android:textSize="12sp"
                         android:layout_height="wrap_content"
                         android:layout_width="wrap_content"
-                        android:text="Creative designer" />
+                        android:text="Frontend Developer" />
                 </LinearLayout>
 
                 <ImageView
@@ -195,11 +193,11 @@
 
                     <TextView
                         android:id="@+id/rtyffskr7l7"
-                        android:textColor="#000000"
-                        android:textSize="12sp"
+                        android:layout_width="94dp"
                         android:layout_height="wrap_content"
-                        android:layout_width="wrap_content"
-                        android:text="Marketer" />
+                        android:text="Marketer/ Lead"
+                        android:textColor="#000000"
+                        android:textSize="12sp" />
                 </LinearLayout>
 
                 <ImageView

@@ -1,5 +1,6 @@
 package com.example.titlevista
 
+
 import android.app.AlertDialog
 import android.content.Intent
 import android.os.Bundle
@@ -13,6 +14,7 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
+
 class LoginActivity : AppCompatActivity() {
 
     private lateinit var emailEditText: EditText
@@ -21,11 +23,8 @@ class LoginActivity : AppCompatActivity() {
     private lateinit var emailEmptyTextView: TextView
     private lateinit var passEmptyTextView: TextView
     private lateinit var passLengthTextView: TextView
-    private lateinit var msgCheckTextView: TextView
     private lateinit var msgErrorTextView: TextView
-    private lateinit var tvRegisterLink: TextView
-    private lateinit var forgetPasswordTextView: TextView
-    private lateinit var registerLinkTextView: TextView
+    private lateinit var registerLinkBtn: TextView
     private lateinit var showPassword: ImageView
     private var isPasswordVisible = false
 
@@ -42,10 +41,8 @@ class LoginActivity : AppCompatActivity() {
         emailEmptyTextView = findViewById(R.id.Emailempty)
         passEmptyTextView = findViewById(R.id.PassEmpty)
         passLengthTextView = findViewById(R.id.PassLength)
-        msgCheckTextView = findViewById(R.id.msgCheck)
         msgErrorTextView = findViewById(R.id.msgError)
-        tvRegisterLink = findViewById(R.id.tvRegisterLink)
-        registerLinkTextView = findViewById(R.id.RegisterLink)
+        registerLinkBtn = findViewById(R.id.RegisterLinkBtn)
         showPassword = findViewById(R.id.showPassword)
 
         // Hide all error messages initially
@@ -53,7 +50,7 @@ class LoginActivity : AppCompatActivity() {
 
         // Set click listeners
         loginButton.setOnClickListener { validateAndLogin() }
-        tvRegisterLink.setOnClickListener { navigateToSignUp() }
+        registerLinkBtn.setOnClickListener { navigateToSignUp() }
         showPassword.setOnClickListener { togglePasswordVisibility() }
     }
 
@@ -61,7 +58,6 @@ class LoginActivity : AppCompatActivity() {
         emailEmptyTextView.visibility = View.GONE
         passEmptyTextView.visibility = View.GONE
         passLengthTextView.visibility = View.GONE
-        msgCheckTextView.visibility = View.GONE
         msgErrorTextView.visibility = View.GONE
     }
 
@@ -117,6 +113,7 @@ class LoginActivity : AppCompatActivity() {
     private fun navigateToSignUp() {
         val intent = Intent(this, SignUpActivity::class.java)
         startActivity(intent)
+        finish()
     }
 
     private fun showLogoutConfirmationDialog() {

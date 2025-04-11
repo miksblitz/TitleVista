@@ -247,7 +247,7 @@
                         android:text="Don't have an account? "/>
 
                     <TextView
-                        android:id="@+id/tvRegisterLink"
+                        android:id="@+id/RegisterLinkBtn"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:clickable="true"

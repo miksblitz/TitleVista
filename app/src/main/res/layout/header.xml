@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="@color/white"
+    android:padding="16dp">
+
+    <!-- Title Vista Logo (centered vertically, aligned to left) -->
+    <ImageView
+        android:id="@+id/title_logo"
+        android:layout_width="200dp"
+        android:layout_height="800dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/titlevistalogo"
+        android:scaleType="fitCenter"/>
+
+    <!-- Navbar Logo (aligned to right with proper spacing) -->
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="20dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/navbarlogo"
+        android:scaleType="fitCenter"
+        android:contentDescription="Menu"/>
+
+</RelativeLayout>
