@@ -75,14 +75,14 @@
                     android:id="@+id/divider"
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
-                    android:layout_marginBottom="20dp"
+                    android:layout_marginBottom="70dp"
                     android:background="#B5B5B5"/>
 
                 <!-- Main Content Card -->
                 <LinearLayout
                     android:id="@+id/main_card"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="511dp"
                     android:layout_marginStart="35dp"
                     android:layout_marginEnd="35dp"
                     android:layout_marginBottom="35dp"
@@ -98,6 +98,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="20dp"
                         android:layout_marginBottom="6dp"
+                        android:fontFamily="@font/roboto_slab"
                         android:text="Title Checker Tool"
                         android:textColor="#441D83"
                         android:textSize="20sp"
@@ -134,7 +135,7 @@
                     <!-- Check Title Button -->
                     <LinearLayout
                         android:id="@+id/btn_check_title_container"
-                        android:layout_width="match_parent"
+                        android:layout_width="127dp"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="72dp"
                         android:layout_marginEnd="72dp"
@@ -142,17 +143,18 @@
                         android:background="@drawable/orangeroundedbutton"
                         android:clickable="true"
                         android:focusable="true"
+                        android:layout_gravity="center"
                         android:orientation="vertical"
-                        android:paddingVertical="10dp"
-                        android:gravity="center">
+                        android:paddingVertical="10dp">
 
                         <TextView
                             android:id="@+id/btnCheckTitle"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_gravity="center"
                             android:text="Check Title"
-                            android:textColor="#441D83"
-                            android:textSize="15sp"
+                            android:textColor="@color/white"
+                            android:textSize="13sp"
                             android:textStyle="bold" />
                     </LinearLayout>
 
